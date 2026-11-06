@@ -1,0 +1,97 @@
+body {
+  background: #FFDDA8;
+  color: #573600;
+  padding: 25px;
+  font-family: sans-serif;
+}
+.box {
+  border: 5px solid #000;
+  background-color: #FFFFFF;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.flex-container {
+  display: flex;               
+  flex-direction: row;        
+  flex-wrap: nowrap;           
+  gap: 15px;                   
+}
+
+.flex-item {
+  flex: 1;                    
+}
+a:hover {
+  color: black;
+  background: yellow;
+}
+@media (hover: hover) {
+
+a:hover {
+  color: #000;
+  background: #DEA8FF;
+}
+.btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden; 
+  transition: color 0.4s ease;
+  z-index: 1;
+}
+}
+.btn-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; 
+  width: 100%;
+  height: 100%;
+  background-color: #A8FFDE;
+  transition: left 0.4s ease;
+  z-index: -1; 
+}
+
+
+.btn-slide:hover {
+  color: #000;
+}
+
+.btn-slide:hover::before {
+  left: 0;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;              
+  flex-direction: row;          
+  flex-wrap: nowrap;           
+  
+
+  justify-content: flex-start; 
+   
+  align-items: stretch;        
+  gap: 10px;                    
+}
+
+
+.flex-item {
+
+  flex: 0 1 auto;             
+  align-self: auto;            
+  order: 0;                     
+}
